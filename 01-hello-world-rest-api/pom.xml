@@ -8,8 +8,8 @@
 	<artifactId>01-hello-world-rest-api</artifactId>
 	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<description>01-Demo project for Spring Boot</description>
-	<name>hello-world-rest-api</name>
+	<description>Demo project for Spring Boot</description>
+	<name>01-hello-world-rest-api</name>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
