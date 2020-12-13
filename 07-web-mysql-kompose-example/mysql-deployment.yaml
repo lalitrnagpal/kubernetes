@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    kompose.cmd: kompose convert
-    kompose.version: 1.22.0 (955b78124)
-  creationTimestamp: null
+#  annotations:
+#    kompose.cmd: kompose convert
+#    kompose.version: 1.22.0 (955b78124)
+#  creationTimestamp: null
   labels:
     io.kompose.service: mysql
   name: mysql
@@ -17,10 +17,10 @@ spec:
     type: Recreate
   template:
     metadata:
-      annotations:
-        kompose.cmd: kompose convert
-        kompose.version: 1.22.0 (955b78124)
-      creationTimestamp: null
+ #     annotations:
+ #       kompose.cmd: kompose convert
+ #       kompose.version: 1.22.0 (955b78124)
+ #     creationTimestamp: null
       labels:
         io.kompose.network/todo-web-application-network: "true"
         io.kompose.service: mysql
@@ -39,7 +39,7 @@ spec:
           name: mysql
           ports:
             - containerPort: 3306
-          resources: {}
+#          resources: {}
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysql-database-data-volume
@@ -48,4 +48,4 @@ spec:
         - name: mysql-database-data-volume
           persistentVolumeClaim:
             claimName: mysql-database-data-volume
-status: {}          
+# status: {}          
