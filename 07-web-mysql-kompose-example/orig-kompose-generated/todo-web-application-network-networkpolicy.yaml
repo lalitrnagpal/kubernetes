@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-#  creationTimestamp: null
+  creationTimestamp: null
   name: todo-web-application-network
 spec:
   ingress:

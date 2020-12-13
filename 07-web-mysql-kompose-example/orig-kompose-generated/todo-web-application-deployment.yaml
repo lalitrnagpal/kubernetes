@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-#  annotations:
-#    kompose.cmd: kompose convert
-#    kompose.version: 1.22.0 (955b78124)
-#  creationTimestamp: null
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (955b78124)
+  creationTimestamp: null
   labels:
     io.kompose.service: todo-web-application
   name: todo-web-application
@@ -16,10 +16,10 @@ spec:
   strategy: {}
   template:
     metadata:
-#      annotations:
-#        kompose.cmd: kompose convert
-#        kompose.version: 1.22.0 (955b78124)
-#      creationTimestamp: null
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (955b78124)
+      creationTimestamp: null
       labels:
         io.kompose.network/todo-web-application-network: "true"
         io.kompose.service: todo-web-application
@@ -40,6 +40,6 @@ spec:
           name: todo-web-application
           ports:
             - containerPort: 8080
-#          resources: {}
+          resources: {}
       restartPolicy: Always
-# status: {}            
+status: {}            
