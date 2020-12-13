@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.boot.web</groupId>
-	<artifactId>02-todo-web-application-h2</artifactId>
+	<artifactId>05-todo-web-application-h2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>02-todo-web-application-h2</name>
+	<name>05-todo-web-application-h2</name>
 
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot Web Application, H2, Kubernetes</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

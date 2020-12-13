@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.boot.rest.restfulwebservices</groupId>
-	<artifactId>02-hello-world-rest-api</artifactId>
+	<artifactId>03-hello-world-rest-api</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<description>Demo project for Spring Boot</description>
-	<name>02-hello-world-rest-api</name>
+	<description>Spring Boot - REST Api, Kubernetes</description>
+	<name>03-hello-world-rest-api</name>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

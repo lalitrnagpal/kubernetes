@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.boot.web</groupId>
-	<artifactId>03-todo-web-application-mysql</artifactId>
+	<artifactId>06-todo-web-application-mysql</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>03-todo-web-application-mysql</name>
+	<name>06-todo-web-application-mysql</name>
 
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot Web Application, MySQL, Kubernetes</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
