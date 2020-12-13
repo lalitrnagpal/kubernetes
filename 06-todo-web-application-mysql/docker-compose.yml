@@ -7,7 +7,7 @@ version: '3.7'
 # {"auths":{},"credsStore":"","stackOrchestrator":"swarm"}
 services:
   todo-web-application:
-    image: lalitrnagpal/03-todo-web-application-mysql:0.0.1-SNAPSHOT
+    image: lalitrnagpal/09-todo-web-application-mysql:0.0.1-SNAPSHOT
     #build:
       #context: .
       #dockerfile: Dockerfile
@@ -22,6 +22,8 @@ services:
       RDS_DB_NAME: todos
       RDS_USERNAME: todos-user
       RDS_PASSWORD: dummytodos
+    networks:
+      - todo-web-application-network
 
   mysql:
     image: mysql:5.7
@@ -36,7 +38,12 @@ services:
       MYSQL_DATABASE: todos
     volumes:
       - mysql-database-data-volume:/var/lib/mysql
-
+    networks:
+      - todo-web-application-network  
+  
 # Volumes
 volumes:
   mysql-database-data-volume:
+
+networks:
+  todo-web-application-network:
