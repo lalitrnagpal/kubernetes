@@ -36,6 +36,8 @@ spec:
             - name: MYSQL_USER
               value: todosuser
           image: mysql:5.7
+          args:
+            - "--ignore-db-dir=lost+found"    # CHANGE
           name: mysql
           ports:
             - containerPort: 3306
