@@ -59,6 +59,12 @@ git clone https://github.com/lalitnagpal/docker.git
 
 sudo chmod 666 /var/run/docker.sock
 
+# Install Kompose 
+curl -L https://github.com/kubernetes/kompose/releases/download/v1.22.0/kompose-linux-amd64 -o kompose
+
+chmod +x kompose
+sudo mv ./kompose /usr/local/bin/kompose
+
 # Restart Docker
 
 sudo systemctl restart docker
