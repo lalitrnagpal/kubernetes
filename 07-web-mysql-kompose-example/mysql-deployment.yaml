@@ -10,9 +10,9 @@ metadata:
   name: mysql
 spec:
   replicas: 1
-#  selector:
-#    matchLabels:
-#      io.kompose.service: mysql
+  selector:
+    matchLabels:
+      io.kompose.service: mysql
   strategy:
     type: Recreate
   template:
@@ -22,7 +22,7 @@ spec:
  #       kompose.version: 1.22.0 (955b78124)
  #     creationTimestamp: null
       labels:
-        io.kompose.network/todo-web-application-network: "true"
+ #      io.kompose.network/todo-web-application-network: "true"
         io.kompose.service: mysql
     spec:
       containers:

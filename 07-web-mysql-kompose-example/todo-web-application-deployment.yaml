@@ -13,7 +13,7 @@ spec:
   selector:
     matchLabels:
       io.kompose.service: todo-web-application
-  strategy: {}
+#  strategy: {}
   template:
     metadata:
 #      annotations:
@@ -21,7 +21,7 @@ spec:
 #        kompose.version: 1.22.0 (955b78124)
 #      creationTimestamp: null
       labels:
-        io.kompose.network/todo-web-application-network: "true"
+#        io.kompose.network/todo-web-application-network: "true"
         io.kompose.service: todo-web-application
     spec:
       containers:
@@ -36,10 +36,10 @@ spec:
               value: "3306"
             - name: RDS_USERNAME
               value: todosuser
-          image: lalitrnagpal/06-todo-web-application-mysql:0.0.1-SNAPSHOT
+          image: lalitrnagpal/07-web-mysql-kompose-example:0.0.1-SNAPSHOT
           name: todo-web-application
           ports:
             - containerPort: 8080
 #          resources: {}
       restartPolicy: Always
-# status: {}            
+# status: {}
