@@ -10,9 +10,9 @@ metadata:
   name: mysql
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      io.kompose.service: mysql
+#  selector:
+#    matchLabels:
+#      io.kompose.service: mysql
   strategy:
     type: Recreate
   template:
