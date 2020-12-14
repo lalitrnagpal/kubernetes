@@ -41,7 +41,7 @@ spec:
                 configMapKeyRef:
                   key: RDS_USERNAME
                   name: todo-web-application-config
-          image: lalitrnagpal/07-web-mysql-kompose-example:0.0.1-SNAPSHOT
+          image: lalitrnagpal/08-web-kompose-configmaps-secrets:0.0.1-SNAPSHOT
           name: todo-web-application
           ports:
             - containerPort: 8080
