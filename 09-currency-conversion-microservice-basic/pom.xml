@@ -6,7 +6,7 @@
 
 	<groupId>com.boot.microservices</groupId>
 	<artifactId>09-currency-conversion-microservice-basic</artifactId>
-	<version>0.0.2-RELEASE</version> <!-- CHANGE -->
+	<version>0.0.2.RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
 	<name>09-currency-conversion-microservice-basic</name>
 
