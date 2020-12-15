@@ -22,7 +22,7 @@ spec:
         app: currency-exchange
     spec:
       containers:
-      - image: lalitrnagpal/09-currency-exchange:0.0.1-RELEASE #CHANGE
+      - image: lalitrnagpal/09-currency-exchange-microservice-basic:0.0.1.RELEASE
         imagePullPolicy: IfNotPresent
         name: currency-exchange
         ports:

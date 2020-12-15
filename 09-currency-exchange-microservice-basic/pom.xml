@@ -5,10 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.boot.microservices</groupId>
-	<artifactId>09-currency-exchange-basic</artifactId>
+	<artifactId>09-currency-exchange-microservice-basic</artifactId>
 	<version>0.0.1-RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
-	<name>09-currency-exchange-basic</name>
+	<name>09-currency-exchange-microservice-basic</name>
 
 	<description>Demo project for Spring Boot</description>
 
