@@ -1,10 +1,10 @@
 # Currency Exchange Micro Service - H2
 
-Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplicationH2 as a Java Application.
+Run com.boot.microservices.currencyconversionservice.CurrencyConversionServiceApplicationH2 as a Java Application.
 
 ## Resources
 
-- http://localhost:8000/currency-exchange/from/USD/to/INR
+- http://localhost:9000/currency-exchange/from/USD/to/INR
 
 ```json
 {
@@ -18,7 +18,7 @@ Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionSe
 
 ## H2 Console
 
-- http://localhost:8000/h2-console
+- http://localhost:9000/h2-console
 - Use `jdbc:h2:mem:testdb` as JDBC URL
 
 
@@ -53,7 +53,7 @@ create table exchange_value
 
 #### Basic
 ```
-docker container run --publish 8000:8000 in28min/currency-exchange:0.0.1-SNAPSHOT
+docker container run --publish 9000:9000 lalitrnagpal/currency-exchange:0.0.1-SNAPSHOT
 ```
 
 

@@ -1,9 +1,9 @@
 # Currency Conversion Micro Service
-Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplication as a Java Application.
+Run com.boot.microservices.currencyconversionservice.CurrencyConversionServiceApplication as a Java Application.
 
 ## Resources
 
-- http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/10
+- http://localhost:9100/currency-conversion/from/EUR/to/INR/quantity/10
 
 ```json
 {
@@ -32,11 +32,11 @@ totalCalculatedAmount: 750
 ### Running Containers
 
 ```
-docker run --publish 8100:8100 --network currency-network --env CURRENCY_EXCHANGE_URI=http://currency-exchange:8000 in28min/currency-conversion:0.0.1-SNAPSHOT
+docker run --publish 9100:9100 --network currency-network --env CURRENCY_EXCHANGE_URI=http://currency-exchange:9000 lalitrnagpal/currency-conversion:0.0.1-SNAPSHOT
 ```
 
 #### Test API 
-- http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/10
+- http://localhost:9100/currency-conversion/from/EUR/to/INR/quantity/10
 
 ```
 docker login

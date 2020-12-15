@@ -43,9 +43,9 @@ metadata:
 spec:
   ports:
   - # nodePort: 30701 #CHANGE
-    port: 8100 #CHANGE
+    port: 9100 #CHANGE
     protocol: TCP
-    targetPort: 8100 #CHANGE
+    targetPort: 9100 #CHANGE
   selector:
     app: currency-conversion
   sessionAffinity: None #CHANGE

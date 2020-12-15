@@ -27,7 +27,7 @@ public class CurrencyConversionController {
 		return "{healthy:true}";
 	}
 
-	//http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+	//http://localhost:9100/currency-conversion/from/USD/to/INR/quantity/10
 	@GetMapping("/currency-conversion/from/{from}/to/{to}/quantity/{quantity}")
 	public CurrencyConversionBean convertCurrency(@PathVariable String from, @PathVariable String to,
 			@PathVariable BigDecimal quantity) {
