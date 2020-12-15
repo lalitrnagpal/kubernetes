@@ -27,7 +27,7 @@ spec:
         name: currency-exchange
         ports:
         - name: liveness-port
-          containerPort: 8000
+          containerPort: 9000
         resources: #CHANGE
           requests:
             cpu: 100m
@@ -62,9 +62,9 @@ metadata:
 spec:
   ports:
   - # nodePort: 30702 #CHANGE
-    port: 8000 #CHANGE
+    port: 9000 #CHANGE
     protocol: TCP
-    targetPort: 8000 #CHANGE
+    targetPort: 9000 #CHANGE
   selector:
     app: currency-exchange
   sessionAffinity: None #CHANGE

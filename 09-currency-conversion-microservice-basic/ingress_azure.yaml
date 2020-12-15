@@ -12,7 +12,7 @@ spec:
       - path: /currency-exchange(/|$)(.*)
         backend:
           serviceName: currency-exchange
-          servicePort: 8000
+          servicePort: 9000
       - path: /currency-conversion(/|$)(.*)
         backend:
           serviceName: currency-conversion
