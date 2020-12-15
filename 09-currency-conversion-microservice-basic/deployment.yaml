@@ -22,7 +22,7 @@ spec:
         app: currency-conversion
     spec:
       containers:
-      - image: lalitrnagpal/currency-conversion:0.0.2-RELEASE #CHANGE
+      - image: lalitrnagpal/09-currency-conversion-microservice-basic:0.0.2-RELEASE #CHANGE
         imagePullPolicy: IfNotPresent
         name: currency-conversion
         env:
