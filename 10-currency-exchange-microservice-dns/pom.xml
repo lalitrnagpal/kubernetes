@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.boot.microservices</groupId>
-	<artifactId>10-currency-exchange-microservice-basic</artifactId>
+	<artifactId>10-currency-exchange-microservice-dns</artifactId>
 	<version>0.0.1.RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
-	<name>10-currency-exchange-microservice-basic</name>
+	<name>10-currency-exchange-microservice-dns</name>
 
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot - Kubernetes DNS</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
