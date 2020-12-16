@@ -1,7 +1,7 @@
 
 # Apply Updates
-sudo apt update
-sudo apt upgrade
+# sudo apt update
+# sudo apt upgrade
 
 # Install Java
 sudo apt install -y openjdk-14-jdk
