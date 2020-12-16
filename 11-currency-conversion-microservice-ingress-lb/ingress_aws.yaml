@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Ingress
+metadata:
+  name: gateway-ingress
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /currency-exchange/*
+        backend:
+          serviceName: currency-exchange
+          servicePort: 9000          
+      - path: /currency-conversion/*
+        backend:
+          serviceName: currency-conversion
+          servicePort: 9100
