@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.microservices</groupId>
+	<groupId>com.boot.microservices</groupId>
 	<artifactId>15-currency-exchange-microservice-istio</artifactId>
 	<version>1.0.0-RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
