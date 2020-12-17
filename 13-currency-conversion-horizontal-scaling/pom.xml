@@ -6,7 +6,7 @@
 
 	<groupId>com.boot.microservices</groupId>
 	<artifactId>13-currency-conversion-horizontal-scaling</artifactId>
-	<version>0.0.5-RELEASE</version> <!-- CHANGE -->
+	<version>0.0.1-RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
 	<name>13-currency-conversion-horizontal-scaling</name>
 
@@ -56,7 +56,7 @@
 
 		<dependency>						<!-- CHANGE -->
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-ribbon</artifactId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 		</dependency>
 
 		<dependency>						<!-- CHANGE -->
