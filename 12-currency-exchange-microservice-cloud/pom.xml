@@ -5,17 +5,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.boot.microservices</groupId>
-	<artifactId>12-currency-conversion-cloud</artifactId>
-	<version>0.0.5-RELEASE</version> <!-- CHANGE -->
+	<artifactId>12-currency-exchange-microservice-cloud</artifactId>
+	<version>0.0.1.RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
-	<name>12-currency-conversion-cloud</name>
+	<name>12-currency-exchange-microservice-cloud</name>
 
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot - Spring Cloud Kubernetes</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.7.RELEASE</version>
+		<version>2.1.1.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -35,11 +35,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -49,26 +44,16 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
-		<dependency>
+		<dependency> <!-- CHANGE -->
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency>
-
-		<dependency>						<!-- CHANGE -->
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-ribbon</artifactId>
-		</dependency>
-
-		<dependency>						<!-- CHANGE -->
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-kubernetes-all</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -121,13 +106,12 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>currency-conversion</finalName>
+		<finalName>10-currency-exchange-microservice-basic</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!-- Docker -->
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
@@ -144,7 +128,6 @@
 				<configuration>
 					<repository>lalitrnagpal/${project.name}</repository>
 					<tag>${project.version}</tag>
-					<skipDockerInfo>true</skipDockerInfo>
 				</configuration>
 			</plugin>
 		</plugins>
